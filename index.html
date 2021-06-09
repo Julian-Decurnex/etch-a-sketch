@@ -21,16 +21,34 @@
         <div class="options" id="options">
             <h4>Welcome to Etch a Sketch! This is a drawing game in which you'll have access to all the colours that exist and several different canvas sizes. Enjoy!</h4>
             <h4>If you have any doubts please check the options below, each of them have and explanation of what they do on their right side</h4>
-            <button class="button" id="newCanvas">New Canvas</button>
-            <p>This will reset the canvas so you can start a new one from scratch</p>
-            <button class="button">Change Canvas Size</button>
-            <p>Lets you change the canvas' size for extra detail</p>
-            <button class="button">Colours</button>
-            <p>This will allow you to choose a new colour!</p>
-            <button class="button" id="showGrid">Show Grid</button>
-            <p>This will show or hide the grid borders</p>
-            <button class="button">Download Canvas</button>
-            <p>Coming soon...</p>
+            <div class="option">
+                <button class="button" id="newCanvas">New Canvas</button>
+                <p id="canvasText">This will reset the canvas so you can start a new one from scratch</p>
+                <div class="buttonMenu hidden" id="canvasMenu">
+                    <div class="flex">
+                        <div class="buttonText">What canvas size would you like?</div>
+                    </div>
+                    <span>3</span><input class="buttonSlider" type="range" min="3" max="50" step="1" value="15"><span>50</span>
+                    <button id="newCanvasCancel" class="menuButton">Cancel</button>
+                    <button id="newCanvasAccept" class="menuButton">Accept</button>
+                </div>
+            </div>
+            <div class="option">
+                <button class="button" id="eraser">Eraser</button>
+                <p>Lets you erase painted pixels</p>
+            </div>
+            <div class="option">
+                <button class="button" id="rainbow">Rainbow Colours</button>
+                <p>This will make it so you paint with the seven colours of the rainbow!</p>
+            </div>
+            <div class="option">
+                <button class="button" id="showGrid">Show Grid</button>
+                <p>This will show or hide the grid borders</p>
+            </div>
+            <div class="option">
+                <button class="button">Download Canvas</button>
+                <p>Coming soon...</p>
+            </div>
         </div>
     </div>
 </body>
